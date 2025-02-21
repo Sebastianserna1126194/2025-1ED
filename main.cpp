@@ -1,7 +1,21 @@
-include <iostream>
+#include "./Tecnico.h"
+#include "./AutoServicio.h"
 
-
-using namespace std;
-
-
-
+int main(){
+    
+    Carro goku;
+    Tecnico vegeta;
+    
+    Carro* ptr = &goku;
+    
+    vegeta.Tanquear(ptr,20);
+    
+    goku.Informacion();
+    
+    //cout << "sobrante: " << sobrante << endl;
+    
+    AutoServicio maquina;
+    maquina.ListarPrecios();
+    
+    return 0;
+}
